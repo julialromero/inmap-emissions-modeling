@@ -1,0 +1,28 @@
+EmissionsShapefiles="/home/julialromero/emissions-modeling/data/downloaded_nei_emissions/2017gb_inventory_point_09feb2021/2017gb_inventory_point_09feb2021.shp"
+
+
+EmissionUnits = "tons/year"
+
+# OutputFile is the p￼ath to the desired output shapefile location. It can
+# include environment variables.
+OutputFile = "/home/julialromero/emissions-modeling/output/output_srpredict_${InMAPRunType}.shp"
+
+
+[OutputVariables]
+TotalPM25 = "PrimaryPM25 + pNH4 + pSO4 + pNO3 + SOA"
+VOC = "VOC"
+SOA = "SOA"
+PrimPM25 = "PrimaryPM25"
+NH3 = "NH3"
+pNH4 = "pNH4"
+SOx = "SOx"
+pSO4 = "pSO4"
+NOx = "NOx"
+pNO3 = "pNO3"
+
+[SR]
+OutputFile = "/home/julialromero/emissions-modeling/data/isrm_v1.2.1.ncf"
+
+
+[VarGrid]
+GridProj="+proj=lcc +lat_1=33.000000 +lat_2=45.000000 +lat_0=39.73964573241204 +lon_0=-104.99032450579703 +x_0=0 +y_0=0 +a=6370997.000000 +b=6370997.000000 +to_meter=1"
